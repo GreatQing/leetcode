@@ -8,7 +8,7 @@ package com.medium.queue;
  * 641. 设计循环双端队列
  **/
 
-// 双链表实现
+// 链表实现
 public class DesignCircularDeque_641_2 {
 
     // 链表节点，采用双向链表
