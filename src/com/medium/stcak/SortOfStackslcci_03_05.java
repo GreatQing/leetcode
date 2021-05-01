@@ -11,11 +11,12 @@ import java.util.Stack;
  **/
 public class SortOfStackslcci_03_05 {
 
-    Stack<Integer> main = new Stack<>();
-    Stack<Integer> tmp = new Stack<>();
+    Stack<Integer> main;
+    Stack<Integer> tmp;
 
     public SortOfStackslcci_03_05() {
-
+        main = new Stack<>();
+        tmp = new Stack<>();
     }
 
     public void push(int val) {
@@ -35,11 +36,18 @@ public class SortOfStackslcci_03_05 {
     }
 
     public void pop() {
-        main.pop();
+        if (!isEmpty()) {
+            main.pop();
+        }
     }
 
+    // 当栈为空时，peek 返回 -1。
     public int peek() {
-        return main.peek();
+        if (isEmpty()) {
+            return -1;
+        } else {
+            return main.peek();
+        }
     }
 
     public boolean isEmpty() {
@@ -47,22 +55,28 @@ public class SortOfStackslcci_03_05 {
     }
 
     public static void main(String[] args) {
-        SortOfStackslcci_03_05 stack = new SortOfStackslcci_03_05();
+        SortOfStackslcci_03_05 stack1 = new SortOfStackslcci_03_05();
 
-        stack.push(1);
-        stack.push(2);
-        stack.push(5);
-        stack.push(3);
-        stack.push(4);
-        System.out.println(stack.peek());
-        stack.pop();
-        System.out.println(stack.peek());
-        stack.pop();
-        System.out.println(stack.peek());
-        stack.pop();
-        System.out.println(stack.peek());
-        stack.pop();
-        System.out.println(stack.peek());
-        stack.pop();
+        stack1.push(1);
+        stack1.push(2);
+        stack1.push(5);
+        stack1.push(3);
+        stack1.push(4);
+        System.out.println(stack1.peek());
+        stack1.pop();
+        System.out.println(stack1.peek());
+        stack1.pop();
+        System.out.println(stack1.peek());
+        stack1.pop();
+        System.out.println(stack1.peek());
+        stack1.pop();
+        System.out.println(stack1.peek());
+        stack1.pop();
+
+        SortOfStackslcci_03_05 stack2 = new SortOfStackslcci_03_05();
+        stack2.pop();
+        stack2.pop();
+        stack2.push(1);
+        System.out.println(stack2.isEmpty());
     }
 }
