@@ -1,4 +1,4 @@
-package com.simple.string;
+package com.simple.stack;
 
 import java.util.HashMap;
 import java.util.Map;
