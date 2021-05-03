@@ -1,5 +1,7 @@
 package com.medium.tree;
 
+import com.TreeNode;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -54,23 +56,5 @@ public class BinaryTreePreorderTraversal_144 {
         }
 
         return list;
-    }
-
-
-    // 树节点
-    private class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

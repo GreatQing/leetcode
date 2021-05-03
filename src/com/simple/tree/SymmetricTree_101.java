@@ -1,5 +1,7 @@
 package com.simple.tree;
 
+import com.TreeNode;
+
 /**
  * @program:leetcode
  * @author:ibaip
@@ -38,21 +40,5 @@ public class SymmetricTree_101 {
 
         // 递归的比较left.left 和 right.right，递归比较 left.right 和 right.left。
         return dfs(left.left, right.right) && dfs(left.right, right.left);
-    }
-
-    private class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

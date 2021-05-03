@@ -1,5 +1,7 @@
 package com.simple.tree;
 
+import com.TreeNode;
+
 /**
  * @program:leetcode
  * @author:ibaip
@@ -24,21 +26,5 @@ public class MaximumDepthOfBinaryTree_104 {
         n = Math.max(i, j) + 1;
 
         return n;
-    }
-
-    private class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }

@@ -1,5 +1,7 @@
 package com.medium.tree;
 
+import com.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
@@ -45,22 +47,5 @@ public class BinaryTreeLevelOrderTraversal_102 {
         }
 
         return lists;
-    }
-
-    // 树节点
-    private class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int val) {
-            this.val = val;
-        }
-
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
-        }
     }
 }
