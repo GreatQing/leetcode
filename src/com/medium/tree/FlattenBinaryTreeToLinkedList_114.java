@@ -9,7 +9,7 @@ import java.util.List;
  * @program:leetcode
  * @author:ibaip
  * @create:2021/5/4 16:08
- *
+ * <p>
  * 114.二叉树展开为链表
  **/
 public class FlattenBinaryTreeToLinkedList_114 {
@@ -17,7 +17,7 @@ public class FlattenBinaryTreeToLinkedList_114 {
     // 由于将二叉树展开为链表之后会破坏二叉树的结构，因此在前序遍历结束之后更新每个节点的左右子节点的信息，将二叉树展开为单链表。
     public void flatten(TreeNode root) {
         List<TreeNode> list = new ArrayList<>();
-        list = helper(root, list);
+        helper(root, list);
 
         for (int i = 1; i < list.size(); i++) {
             TreeNode pre = list.get(i - 1);
@@ -29,15 +29,11 @@ public class FlattenBinaryTreeToLinkedList_114 {
 
     }
 
-    private List<TreeNode> helper(TreeNode root, List<TreeNode> list) {
-        if (root == null) {
-            return list;
+    private void helper(TreeNode root, List<TreeNode> list) {
+        if (root != null) {
+            list.add(root);
+            helper(root.left, list);
+            helper(root.right, list);
         }
-
-        list.add(root);
-        helper(root.left, list);
-        helper(root.right, list);
-
-        return list;
     }
 }
