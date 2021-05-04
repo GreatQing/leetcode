@@ -11,8 +11,8 @@ public class CreateClassName {
 
     public static void main(String[] args) {
 
-        String w = "construct-binary-tree-from-preorder-and-inorder-traversal";
-        String num = "105";
+        String w = "flatten-binary-tree-to-linked-list";
+        String num = "114";
 
         StringBuilder sb = new StringBuilder(w);
         sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
