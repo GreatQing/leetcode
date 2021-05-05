@@ -11,8 +11,8 @@ public class CreateClassName {
 
     public static void main(String[] args) {
 
-        String w = "unique-binary-search-trees";
-        String num = "96";
+        String w = "validate-binary-search-tree";
+        String num = "98";
 
         StringBuilder sb = new StringBuilder(w);
         sb.setCharAt(0, Character.toUpperCase(sb.charAt(0)));
