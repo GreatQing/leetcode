@@ -13,6 +13,7 @@ import java.util.Set;
  **/
 public class ContainsDuplicate_217 {
 
+    // 排序后两两比较
     public static boolean containsDuplicate1(int[] nums) {
         Arrays.sort(nums);
 
@@ -25,6 +26,7 @@ public class ContainsDuplicate_217 {
         return false;
     }
 
+    // 利用Set
     public static boolean containsDuplicate2(int[] nums) {
         Set<Integer> set = new HashSet<>();
 
