@@ -1,5 +1,7 @@
 package com.simple.linkedlist;
 
+import com.ListNode;
+
 /**
  * @program:leetcode
  * @author:ibaip
