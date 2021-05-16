@@ -12,7 +12,7 @@ import java.util.List;
  **/
 public class SpiralMatrix_54 {
 
-    // 从外部向内部逐层遍历打印，外面一层打印完，里面一层仍热是一个矩阵
+    // 从外部向内部逐层遍历打印，外面一层打印完，里面一层仍然是一个矩阵
     public static List<Integer> spiralOrder(int[][] matrix) {
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -21,7 +21,7 @@ public class SpiralMatrix_54 {
         // 有多少列
         int n = matrix[0].length;
         // 统计矩阵从外到内的层数
-        // 每一层最多会占据两行或者两列，最少会占据一行或者一列。如果只有一层或者一列，也是一层
+        // 每一层最多会占据两行或者两列，最少会占据一行或者一列。如果只有一行或者一列，也是一层
         // 如果矩阵非空，层数至少为1
         int count = (Math.min(m, n) + 1) / 2;
 
